@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="Style/Style.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="sidebar">
+            <a class="active" href="index.html"><h1>Home</h1></a>
+            <a href="Pages/About.html">Over mij</a>
+            <a href="Pages/Projects.html">Projecten</a>
+            <a href="Pages/Contact.html">Contact</a>
+        </div>
+        <div class="content">
+            <button type="button" class="collapsible"><h1>Mijn Portfolio</h1></button>
+            <div class="contentcollapsible">
+                <div class="header">
+                <h1>Quillan Wielhouwer</h1><br>
+                </div>
+            </div>
+            <h1>Welkom!</h1>
+            <h3>Dit is mijn portfolio, hier zet ik alles in over mijn tijd bij het Grafisch Lyceum Rotterdam.<br>
+            Maar ook zet ik hier dingen in over werk en persoonlijke projecten.<br>Deze site zal voor een lange tijd dus ook worden bijgehouden, 
+            zodat hier alles te vinden is over mij.<br><br>Ook kun je me via deze website bereiken via de contact pagina,<br>
+            hier kun je alles vinden wat je nodig hebt om mij snel te bereiken.</h3>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+            });
+            }
+        </script>
+    </body>
+</html>
