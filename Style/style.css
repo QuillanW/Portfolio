@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    background-color: orange;
+    height: 2000px;
+  }
+  
+  .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: azure;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    /* Sidebar links */
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    /* Active/current link */
+    .sidebar a.active {
+      background-color: #006be6;
+      color: white;
+    }
+    
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    div.content {
+      margin-left: 11%;
+      padding: 1px 16px;
+      background: azure;
+      width: 86.8%;
+      height: 2000px;
+      text-align: center;
+    }
+    
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+    
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+  h3,h1,p,a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  div.header {
+    height: 300px;
+    width: 97.5%;
+    display: block;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    margin-top: -1px;
+  }
+  
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .contentcollapsible {
+    padding: 0 1px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
