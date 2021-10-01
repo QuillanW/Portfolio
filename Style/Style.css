@@ -99,7 +99,9 @@ div.header {
 }
 
 .buttonFoto {
-  position: fixed;
+  z-index: -1;
+  position: relative;
   height: 80px;
-  float: right;
+  top: 0;
+  float: left;
 }
