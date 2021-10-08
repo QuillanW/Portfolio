@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-image: url("Media/background.jpg");
+  background-color: orange;
   height: 2000px;
 }
 
@@ -85,6 +85,7 @@ div.header {
   text-align: center;
   outline: none;
   font-size: 15px;
+  z-index: 2;
 }
 
 .active, .collapsible:hover {
@@ -99,9 +100,9 @@ div.header {
 }
 
 .buttonFoto {
-  z-index: -1;
+  z-index: 0;
   position: relative;
-  height: 80px;
+  width: 100px;
   top: 0;
   float: left;
 }
