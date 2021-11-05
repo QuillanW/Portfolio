@@ -35,13 +35,10 @@
             hier kun je alles vinden wat je nodig hebt om mij snel te bereiken.</h3>
     </div>
     <script>
-        test = true
-        while (test == true) {
+        (function(){
             var scroll = document.scrollingElement.scrollTop
-        }
-
-        
-        
+            setTimeout(arguments.callee, 60000);
+        })();
     </script>
 </body>
 
