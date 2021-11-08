@@ -1,6 +1,7 @@
 body{
   margin: 0;
-  height: 2000px;
+  min-height: 1500px;
+  max-height: 2000px;
   background-image: url("../Media/Rotterdam.jpg");
 }
 
@@ -36,7 +37,6 @@ div.content {
   padding: 1px 16px;
   background: rgba(70, 70, 70, 0.6);
   width: 86.8%;
-  height: 2000px;
   text-align: center;
 }
 
@@ -92,6 +92,8 @@ div.header {
   overflow: hidden;
   background-color: rgba(70, 70, 70, 0.5);
   display: none;
+  width: 100%;
+  text-align: center;
 }
 
 ::-webkit-scrollbar {
