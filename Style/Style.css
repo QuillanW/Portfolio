@@ -1,7 +1,7 @@
 body{
   margin: 0;
-  background-color: orange;
   height: 2000px;
+  background-image: url("../Media/Rotterdam.jpg");
 }
 
 .sidebar {
@@ -27,14 +27,14 @@ body{
 }
 
 .sidebar a:hover:not(.active) {
-  background-color: #555;
+  background-color: orange;
   color: lightgrey;
 }
 
 div.content {
   margin-left: 11%;
   padding: 1px 16px;
-  background: rgb(70, 70, 70);
+  background: rgba(70, 70, 70, 0.6);
   width: 86.8%;
   height: 2000px;
   text-align: center;
@@ -76,7 +76,7 @@ div.header {
 }
 
 .collapsible {
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.5);
   color: lightgrey;
   cursor: pointer;
   padding: 10px;
@@ -89,14 +89,23 @@ div.header {
 
 .contentcollapsible {
   padding: 0 1px;
-  display: none;
   overflow: hidden;
-  background-color: rgb(70, 70, 70);
+  background-color: rgba(70, 70, 70, 0.5);
+  display: none;
 }
 
-.buttonFoto {
-  position: relative;
-  width: 100%;
-  top: 0;
-  float: left;
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: orange;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(70, 70, 70);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
 }

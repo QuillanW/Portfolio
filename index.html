@@ -16,10 +16,9 @@
         </div>
         <div class="content">
             <button type="button" class="collapsible">
-                <img src="Media/Rotterdam.jpg" class="buttonFoto">
-                <h1 style="position: absolute; margin-top: 2%; margin-left: 39%; margin-right: 41%;">Mijn Portfolio</h1>
+                <h1 style="margin-top: 2%; margin-left: 39%; margin-right: 41%;">Mijn Portfolio</h1>
             </button>
-            <div class="contentcollapsible">
+            <div class="contentcollapsible" id="contentcollapsible">
                 <div class="header">
                     <h1>Quillan Wielhouwer</h1><br>
                 </div>
@@ -36,7 +35,12 @@
             (function(){
                 var scroll = document.scrollingElement.scrollTop
                 console.log(scroll)
-                setTimeout(arguments.callee, 1);
+                if (scroll == 0) {
+                    document.getElementById("contentcollapsible").style.display = "block";
+                } else {
+                    document.getElementById("contentcollapsible").style.display = "none";
+                }
+                setTimeout(arguments.callee, 50);
             })();
         </script>
     </body>
