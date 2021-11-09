@@ -40,7 +40,7 @@ pic:before{
     }
 }
 pic:after{
-    content: url("../Media/foto.jpg");
+    content: url("/Media/foto.jpg");
     height: 94%;
     width: 94%;
     position: absolute;
