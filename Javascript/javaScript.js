@@ -1,6 +1,5 @@
 (function(){
     var scroll = document.scrollingElement.scrollTop
-    console.log(scroll)
     if (scroll == 0) {
         document.getElementById("contentcollapsible").style.position = "";
         document.getElementById("contentcollapsible").style.marginTop = "";
