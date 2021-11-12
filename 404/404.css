@@ -1,0 +1,20 @@
+* {
+    margin: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.link a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: grey;
+    -moz-transform: scale(5, -1);
+    -webkit-transform: scale(5, -1);
+    -o-transform: scale(5, -1);
+    -ms-transform: scale(5, -1);
+    transform: scale(5, -1);
+}
