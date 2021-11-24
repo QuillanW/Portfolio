@@ -1,0 +1,20 @@
+.container1 {
+    display: grid;
+    margin: 1%;
+    height: 1000px;
+    grid-template-columns: 1fr 1% 3fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "sidebar . content";
+}
+
+.sidebar {
+    text-align: center;
+    background-color: var(--grey);
+    grid-area: sidebar;
+}
+
+.content {
+    text-align: center;
+    background-color: var(--grey);
+    grid-area: content;
+}

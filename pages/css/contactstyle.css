@@ -1,0 +1,42 @@
+.container1 {
+    display: grid;
+    margin: 1%;
+    height: 600px;
+    grid-template-columns: 1fr 1% 3fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "socialMedia . contact";
+}
+
+.socialMedia {
+    text-align: center;
+    background-color: var(--grey);
+    grid-area: socialMedia;
+}
+
+.contact {
+    text-align: center;
+    background-color: var(--grey);
+    grid-area: contact;
+}
+
+.forminput {
+    border: none;
+    border-bottom: solid var(--orange);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#message {
+    display: inline-block;
+    width: 50%;
+}
+
+.submit {
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+    border: none;
+    border-bottom: solid var(--orange);
+    background-color: var(--blue);
+    color: var(--white);
+}

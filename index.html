@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="Style/Style.css">
-        <link rel="stylesheet" href="Style/animation.css">
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <div class="sidebar">
-            <a class="active" href="index.html">
-                <h1>Home</h1>
-            </a>
-            <a href="Pages/About.html">Over mij</a>
-            <a href="https://87285.ict-lab.nl/index.html">Projecten</a>
-            <a href="Pages/Contact.html">Contact</a>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Home</h1>
         </div>
-        <div class="content">
-            <button type="button" class="collapsible">
-                <h1 style="margin-top: 2%; margin-left: 39%; margin-right: 41%;">Mijn Portfolio</h1>
-            </button>
-            <div class="contentcollapsible" id="contentcollapsible">
-                <div class="header">
-                    <h1>Quillan Wielhouwer</h1><br>
-                </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://87285.ict-lab.nl/index.html">Projecten</a>
+                    <ul>
+                        <li><a href="https://87285.ict-lab.nl/menu/basisModule.html">Basis</a></li>
+                        <li><a href="https://87285.ict-lab.nl/menu/beroepsModule.html">Beroeps</a></li>
+                        <li><a href="https://87285.ict-lab.nl/menu/mediaModule.html">MediaMT</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/about.html">Over mij</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container1">
+            <div class="sidebar">
+                <h1>Sidebar</h1>
             </div>
-            <h1>Welkom!</h1>
-            <h3>Dit is mijn portfolio, hier zet ik alles in over mijn tijd bij het Grafisch Lyceum Rotterdam.<br>
-                Maar ook zet ik hier dingen in over werk en persoonlijke projecten.<br>Deze site zal voor een lange tijd dus
-                ook worden bijgehouden,
-                zodat hier alles te vinden is over mij.<br><br>Ook kun je me via deze website bereiken via de contact
-                pagina,<br>
-                hier kun je alles vinden wat je nodig hebt om mij snel te bereiken.</h3>
+            <div class="content">
+                <h1>Content</h1>
+            </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="Javascript/javaScript.js"></script>
-    </body>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+
 </html>

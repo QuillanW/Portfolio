@@ -1,0 +1,89 @@
+.container1 {
+    display: grid;
+    margin: 1%;
+    height: 1000px;
+    grid-template-columns: 1fr 1% 3fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "sidebar . content";
+}
+
+.sidebar {
+    text-align: center;
+    background-color: var(--grey);
+    grid-area: sidebar;
+}
+
+.content {
+    text-align: center;
+    background-color: var(--grey);
+    grid-area: content;
+}
+
+.contentItem {
+    display: none;
+    margin: 1%;
+    height: 100%;
+}
+
+.sideButton {
+    display: block;
+    margin: 5%;
+    width: 90%;
+    height: 10%;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 150%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid;
+    border-bottom-color: var(--orange);
+    border-width: 3px;
+}
+
+.contentButton {
+    display: block;
+    margin: 5%;
+    width: 90%;
+    height: 10%;
+    background-color: var(--blue);
+    padding: autos;
+    color: var(--white);
+    font-size: 150%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid;
+    border-bottom-color: var(--orange);
+    border-width: 3px;
+    text-decoration: none;
+}
+
+p1 {
+    display: block;
+    padding: 2.75%;
+}
+
+.sideButton:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+}
+
+.contentButton:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+}
+
+.table {
+    width: 100%;
+    border: 3px solid var(--blue);
+}
+
+.th {
+    width: 10%;
+    border: 3px solid var(--blue);
+}
+
+.th:hover {
+    background-color: var(--orange);
+}
