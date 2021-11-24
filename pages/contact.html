@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contact</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://87285.ict-lab.nl/index.html">Projecten</a>
+                <ul>
+                    <li><a href="https://87285.ict-lab.nl/menu/basisModule.html">Basis</a></li>
+                    <li><a href="https://87285.ict-lab.nl/menu/beroepsModule.html">Beroeps</a></li>
+                    <li><a href="https://87285.ict-lab.nl/menu/mediaModule.html">MediaMT</a></li>
+                </ul>        
+                </li>
+                <li><a href="about.html">Over mij</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container1">
+            <div class="socialMedia">
+                <h1>social media</h1>
+            </div>
+            <div class="contact">
+                <h1>contact</h1>
+                <form onsubmit="confirm()">
+                    <label for="name">Naam:</label><br>
+                    <input class="forminput" type="text" id="name" name="name" maxlength="25" required autocomplete="off"><br>
+                    <label for="email">E-mail adres:</label><br>
+                    <input class="forminput" type="email" id="email" name="email" required><br>
+                    <label for="subject">Onderwerp:</label><br>
+                    <input class="forminput" type="text" id="subject" name="subject" maxlength="50" required autocomplete="off"><br>
+                    <label for="message">Bericht:</label><br>
+                    <textarea class="forminput" type="text" id="message" name="message" required autocomplete="off" rows="4"></textarea><br>
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+    <script>
+        function confirm() {
+            window.alert("Bericht verzonden!")
+        }
+    </script>
+</body>
+</html>
