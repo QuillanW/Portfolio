@@ -48,3 +48,18 @@
 .icon:hover {
     width: 30%;
 }
+
+.details {
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 0;
+}
+
+.details:hover {
+    display: inherit;
+    width: 30%;
+    font-size: 90%;
+}
